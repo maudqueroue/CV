@@ -1,2 +1,2 @@
 # CV
-Creation of my CV with the package vitae
+Creation of my CV with the package _vitae_
