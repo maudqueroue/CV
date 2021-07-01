@@ -59,7 +59,8 @@ tribble(
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ this_is_the_list,
- "workshop co-encadré par M Schaub, M Kéry, O Gimenez et M Quéroué", "2020", "Workshop modèles de population intégrés", "","Présentation de la méthodologie et d'un cas d'étude sur les modèles de population intégrés multi-espèces",
+   "co-encadrement par Maud Quéroué, Olivier Gimenez et Christophe Barbraud", "2021 - 6 mois", "Encadrement du stage de Master 2 de Lise Viollat", "","Étude de la dynamique d'un système proies-prédateur d'oiseaux marins en Antarctique",
+ "workshop co-encadré par Michael Schaub, Marc Kéry, Olivier Gimenez et Maud Quéroué", "2020", "Workshop modèles de population intégrés", "","Présentation de la méthodologie et d'un cas d'étude sur les modèles de population intégrés multi-espèces",
   "Statistiques appliquées à la biologie, travaux dirigés et travaux pratiques niveau Master 1", "2018-2019", "Professeure vacataire - Université de Montpellier", "Montpellier, France","Apprentissage de R, Statistiques descriptives, Statistiques inférentielles, Modèles linéaires"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where, this_is_the_list, .protect = FALSE)
