@@ -2,7 +2,7 @@
 name: Maud
 surname: Quéroué
 position: "Doctorante en troisième année, Soutenance le 7 décembre 2021"
-address: "Centre d'Ecologie Fonctionnelle et Evolutive"
+address: "Centre d'Ecologie Fonctionnelle et Evolutive, CNRS, Montpellier"
 phone: +33 6 47 43 43 77
 email: "maud.queroue@cefe.cnrs.fr"
 twitter: maudqueroue
@@ -21,6 +21,7 @@ library(vitae)
  * Forte expérience en analyses statistiques, modélisation intégrée
  * Très bonne maîtrise de la programmation avec R
  * Statistiques bayésiennes : Nimble, JAGS
+ * Maitrise des outils de recherche reproductible : GitHub, rmarkdown
  * Connaissances ornithologiques
  * Anglais scientifique
 
@@ -39,15 +40,15 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-# EXPÉRIENCE
+# EXPÉRIENCE EN RECHERCHE
 
 ```{r}
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ this_is_the_list,
- "Doctorat - Centre d'Ecologie Fonctionnelle et Evolutive, Equipe HAIR, CNRS - Encadrement : Olivier Gimenez, Pierre-Yves Henry, Christophe Barbraud", "2018 - 2021", "Utilisation des modèles intégrés de population multi-espèces pour comprendre les relations interspécifiques chez les oiseaux", "Montpellier, France","Modèles de population intégrés, Capture-recapture, Inférence bayésienne, Modèles multi-espèces",
-  "Stage de Master 2 - INRA, Agrocampus Ouest- UMR ESE Ecologie et Santé des écosystèmes. Encadrement: Etienne Rivot et Maxime Olmos", "2018 - 8 mois", "Réponses des populations de saumon atlantique (Salmo salar) aux changements de l’écosystème marin : Analyse de la synchronie dans la dynamique de populations des différentes unités de stock de l’océan Atlantique", "Rennes, France","Modèles bayésiens Hiérarchiques, Covariation spatiale, Approche multi-échelles",
-  "Stage de Master 1 - INRA, Agrocampus Ouest- UMR ESE Ecologie et Santé des écosystèmes. Encadrement: Etienne Rivot et Maxime Olmos", "2017 - 4 mois", "Déclin de l’abondance du saumon atlantique (Salmo salar) dans l’Atlantique Nord : Affiner les hypothèses de modélisation de la phase juvénile du cycle de vie pour mieux comprendre la dynamique des populations", "Rennes, France","Modèles Bayésiens Hiérarchiques, Modèle de cycle de vie, Prise en compte de la densité dépendance"
+ "Doctorat - Centre d'Ecologie Fonctionnelle et Evolutive, Equipe HAIR, CNRS. Encadrement : Olivier Gimenez, Pierre-Yves Henry, Christophe Barbraud", "2018 - 2021", "Utilisation des modèles intégrés de population multi-espèces pour comprendre les relations interspécifiques chez les oiseaux", "Montpellier, France","Modèles de population intégrés, Capture-recapture, Inférence bayésienne, Modèles multi-espèces",
+  "Stage de Master 2 - INRA, Agrocampus Ouest- UMR Ecologie et Santé des Écosystèmes. Encadrement: Etienne Rivot et Maxime Olmos", "2018 - 8 mois", "Réponses des populations de saumon atlantique (Salmo salar) aux changements de l’écosystème marin : Analyse de la synchronie dans la dynamique de populations des différentes unités de stock de l’océan Atlantique", "Rennes, France","Modèles bayésiens hiérarchiques, Covariation spatiale, Approche multi-échelles",
+  "Stage de Master 1 - INRA, Agrocampus Ouest- UMR Ecologie et Santé des Écosystèmes. Encadrement: Etienne Rivot et Maxime Olmos", "2017 - 4 mois", "Déclin de l’abondance du saumon atlantique (Salmo salar) dans l’Atlantique Nord : Affiner les hypothèses de modélisation de la phase juvénile du cycle de vie pour mieux comprendre la dynamique des populations", "Rennes, France","Modèles bayésiens hiérarchiques, Modèle de cycle de vie, Prise en compte de la densité dépendance"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where, this_is_the_list, .protect = FALSE)
 ```
@@ -58,7 +59,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ this_is_the_list,
- "workshop co-encadré par M Schaub, M Kéry, O Gimenez and M Quéroué", "2020", "Workshop modèles de population intégrés", "","Présentation de la méthodologie et d'un cas d'étude sur les modèles de population intégrés multi-espèces",
+ "workshop co-encadré par M Schaub, M Kéry, O Gimenez et M Quéroué", "2020", "Workshop modèles de population intégrés", "","Présentation de la méthodologie et d'un cas d'étude sur les modèles de population intégrés multi-espèces",
   "Statistiques appliquées à la biologie, travaux dirigés et travaux pratiques niveau Master 1", "2018-2019", "Professeure vacataire - Université de Montpellier", "Montpellier, France","Apprentissage de R, Statistiques descriptives, Statistiques inférentielles, Modèles linéaires"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where, this_is_the_list, .protect = FALSE)
@@ -83,9 +84,9 @@ tribble(
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
- "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2021", "Multispecies integrated population model reveals bottom‐up dynamics in a seabird predator–prey system", "Ecological Monographs, e01459",
+ "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2021", "Multispecies integrated population model reveals bottom‐up dynamics in a seabird predator–prey system", "Ecological Monographs",
   "Quéroué M, Olmos M, Rivot E, Chaput G", "2018", "Assessing the spatial synchrony in the marine survival of
-Atlantic salmon (Salmo salar) populations across the North Atlantic Ocean", "WGNAS Working Paper 2018/33",
+Atlantic salmon (Salmo salar) populations across the North Atlantic Ocean", "WGNAS Working Paper",
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
@@ -98,7 +99,7 @@ tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
  "Quéroué M, Henry P-Y, Barraquand F and Gimenez O", "2021", "Using multispecies integrated population model to understand competition between birds: A case study on Great tits and Blue tits", "EURING Analytical Meeting & Workshop",
   "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2020", "Revealing how interspecific relationships and environmental fluctuations affect seabirds’ population dynamics: A multispecies demography approach", "International Statistical Ecology Conference",
-   "Quéroué M", "2020", "Multispecies integrated population models reveal the relative contribution of interspecific relationships and climate fluctuations on seabirds demography", "World Seabird Twitter Conference",
+   "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2020", "Multispecies integrated population models reveal the relative contribution of interspecific relationships and climate fluctuations on seabirds demography", "World Seabird Twitter Conference",
     "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2020", "Utilisation de modèles de population intégrés pour comprendre les effets des relations interspecifiques et des fluctuations climatiques dans la dynamique d’oiseaux marins", "GDR Ecologie Statistique",
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
