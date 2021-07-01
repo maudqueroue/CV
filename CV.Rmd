@@ -1,0 +1,105 @@
+---
+name: Maud
+surname: Quéroué
+position: "Doctorante en troisième année, Soutenance le 7 décembre 2021"
+address: "Centre d'Ecologie Fonctionnelle et Evolutive"
+phone: +33 6 47 43 43 77
+email: "maud.queroue@cefe.cnrs.fr"
+twitter: maudqueroue
+github: maudqueroue
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# COMPÉTENCES
+
+ * Forte expérience en analyses statistiques, modélisation intégrée
+ * Très bonne maîtrise de la programmation avec R
+ * Statistiques bayésiennes : Nimble, JAGS
+ * Connaissances ornithologiques
+ * Anglais scientifique
+
+# FORMATION
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+ "Equipe HAIR, CEFE, CNRS", "2018 - 2021", "Doctorat au Centre d'Ecologie Fonctionnelle et Evolutive", "Montpellier, France",
+  "Spécialité Modélisation en Ecologie, Mention Biodiversité Ecologie, Evolution", "2016 - 2018", "Master Université de Rennes 1", "Rennes, France",
+  "Spécialité Sciences Végétales, Mention Biologie", "2013 - 2016", "Licence Université de Rennes 1", "Rennes, France",
+  "Spécialité mathématiques, Mention TB", "2013", "Baccalauréat Scientifique - Lycée Pierre Guéguin", "Concarneau, France"
+
+ ) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# EXPÉRIENCE
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ this_is_the_list,
+ "Doctorat - Centre d'Ecologie Fonctionnelle et Evolutive, Equipe HAIR, CNRS - Encadrement : Olivier Gimenez, Pierre-Yves Henry, Christophe Barbraud", "2018 - 2021", "Utilisation des modèles intégrés de population multi-espèces pour comprendre les relations interspécifiques chez les oiseaux", "Montpellier, France","Modèles de population intégrés, Capture-recapture, Inférence bayésienne, Modèles multi-espèces",
+  "Stage de Master 2 - INRA, Agrocampus Ouest- UMR ESE Ecologie et Santé des écosystèmes. Encadrement: Etienne Rivot et Maxime Olmos", "2018 - 8 mois", "Réponses des populations de saumon atlantique (Salmo salar) aux changements de l’écosystème marin : Analyse de la synchronie dans la dynamique de populations des différentes unités de stock de l’océan Atlantique", "Rennes, France","Modèles bayésiens Hiérarchiques, Covariation spatiale, Approche multi-échelles",
+  "Stage de Master 1 - INRA, Agrocampus Ouest- UMR ESE Ecologie et Santé des écosystèmes. Encadrement: Etienne Rivot et Maxime Olmos", "2017 - 4 mois", "Déclin de l’abondance du saumon atlantique (Salmo salar) dans l’Atlantique Nord : Affiner les hypothèses de modélisation de la phase juvénile du cycle de vie pour mieux comprendre la dynamique des populations", "Rennes, France","Modèles Bayésiens Hiérarchiques, Modèle de cycle de vie, Prise en compte de la densité dépendance"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, this_is_the_list, .protect = FALSE)
+```
+
+# ENSEIGNEMENT
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ this_is_the_list,
+ "workshop co-encadré par M Schaub, M Kéry, O Gimenez and M Quéroué", "2020", "Workshop modèles de population intégrés", "","Présentation de la méthodologie et d'un cas d'étude sur les modèles de population intégrés multi-espèces",
+  "Statistiques appliquées à la biologie, travaux dirigés et travaux pratiques niveau Master 1", "2018-2019", "Professeure vacataire - Université de Montpellier", "Montpellier, France","Apprentissage de R, Statistiques descriptives, Statistiques inférentielles, Modèles linéaires"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, this_is_the_list, .protect = FALSE)
+```
+
+# EXPÉRIENCE TERRAIN
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+ "Comptages au printemps des oiseaux migrateurs avec l’association MedMigration", "2019 - 2021", "Bénévole suivi de migration des oiseaux", "Leucate, France",
+  "Suivi démographique d’oiseaux marins : labbes, pétrels, prions, océanites", "2018 - 2 mois", "Campagne d’été à Kerguelen - Aide terrain programme 109 ORNITHO-ECO", "Terres Australes et Antarctiques Françaises",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+
+# PUBLICATIONS
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+ "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2021", "Multispecies integrated population model reveals bottom‐up dynamics in a seabird predator–prey system", "Ecological Monographs, e01459",
+  "Quéroué M, Olmos M, Rivot E, Chaput G", "2018", "Assessing the spatial synchrony in the marine survival of
+Atlantic salmon (Salmo salar) populations across the North Atlantic Ocean", "WGNAS Working Paper 2018/33",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# CONFÉRENCES
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+ "Quéroué M, Henry P-Y, Barraquand F and Gimenez O", "2021", "Using multispecies integrated population model to understand competition between birds: A case study on Great tits and Blue tits", "EURING Analytical Meeting & Workshop",
+  "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2020", "Revealing how interspecific relationships and environmental fluctuations affect seabirds’ population dynamics: A multispecies demography approach", "International Statistical Ecology Conference",
+   "Quéroué M", "2020", "Multispecies integrated population models reveal the relative contribution of interspecific relationships and climate fluctuations on seabirds demography", "World Seabird Twitter Conference",
+    "Quéroué M, Barbraud C, Barraquand F, Turek D, Delord K, Pacoureau N and Gimenez O", "2020", "Utilisation de modèles de population intégrés pour comprendre les effets des relations interspecifiques et des fluctuations climatiques dans la dynamique d’oiseaux marins", "GDR Ecologie Statistique",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
